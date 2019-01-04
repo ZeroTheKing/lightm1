@@ -1,6 +1,6 @@
  client.on('message', async msg => {
     if (msg.author.bot) return undefined;
-    if (!msg.content.startsWith(prefix)) return undefined;///// DgPro
+    if (!msg.content.startsWith(1)) return undefined;///// DgPro
     const args = msg.content.split(' ');
     const searchString = args.slice(1).join(' ');///// DgPro
     const url = args[1] ? args[1] .replace(/<(.+)>/g, '$1') : '';
